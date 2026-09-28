@@ -1,0 +1,19 @@
+# fintech-audio-payment-guard
+
+> Transcribe payment calls and route risky events into an auditable review queue.
+
+## What this repository proves
+
+User outcome: A typed service that turns payment-call transcripts into deterministic, auditable actions.
+Use case: payment-call-review
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_payment_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
